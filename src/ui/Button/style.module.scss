@@ -1,0 +1,12 @@
+.btn {
+  background-color: var(--first-color);
+  color: var(--fourth-color);
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+  padding: 16px 40px;
+
+  &:hover {
+    background-color: var(--second-color);
+  }
+}

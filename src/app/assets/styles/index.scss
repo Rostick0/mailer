@@ -1,0 +1,12 @@
+@import "./reset";
+@import "./root";
+@import "./fonts";
+@import "./ui";
+
+.wrapper {
+  background-color: var(--fourth-color);
+  color: var(--third-color);
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+}

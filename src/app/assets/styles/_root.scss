@@ -1,0 +1,12 @@
+:root {
+  --first-color: #dd1405;
+  --second-color: #ff9b94;
+  --third-color: #1e1e1e;
+  --fourth-color: #fafafa;
+  --fifth-color: #6f6f6f;
+
+  ._dark {
+    --third-color: #fafafa;
+    --fourth-color: #1e1e1e;
+  }
+}

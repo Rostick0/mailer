@@ -1,0 +1,19 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 40px;
+  }
+
+  &__button {
+    padding: 8px 48px;
+
+    &s {
+      display: flex;
+      column-gap: 12px;
+    }
+  }
+}
