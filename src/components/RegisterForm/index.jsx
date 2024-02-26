@@ -86,7 +86,7 @@ export default function RegisterForm() {
         className={styles.register_form__button}
         onClick={() => console.log(errors.name)}
       >
-        {t("logIn")}
+        {t("registerFormSubmit")}
       </Button>
       <div>
         {t("registerFormAlready")}{" "}

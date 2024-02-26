@@ -1,6 +1,7 @@
 import styles from "./style.module.scss";
 import Title from "../../ui/Title";
 import { useTranslation } from "react-i18next";
+import Item from "../Item";
 
 export default function MainDelivery() {
   const { t } = useTranslation();
@@ -81,15 +82,13 @@ export default function MainDelivery() {
       <div className={styles.delivery__subtitle}>{t("deliverySubTitle")}</div>
       <ul className={styles.delivery__list}>
         {list.map((item, index) => (
-          <li className={styles.delivery__item}>
-            {item.svg}
-            <div className={styles.delivery__item_title}>
-              {t("deliveryItemTitle" + (index + 1))}
-            </div>
-            <div className={styles.delivery__item_description}>
-              {t("deliveryItemDeescription" + (index + 1))}
-            </div>
-          </li>
+          <Item
+            key={index}
+            variant="red"
+            svg={item.svg}
+            title={t("deliveryItemTitle" + (index + 1))}
+            description={t("deliveryItemDeescription" + (index + 1))}
+          />
         ))}
       </ul>
     </div>

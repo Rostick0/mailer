@@ -8,21 +8,18 @@ import MainQuick from "../../components/MainQuick";
 import ClientLayout from "../../layout/ClientLayout";
 
 export default function Home() {
-
   return (
     <ClientLayout>
-      <main className="main">
-        <div className="container">
-          <MainOutstanding />
-          <MainDelivery />
-          <MainReputation />
-        </div>
-        <MainSending />
-        <div className="container">
-          <MainUtilize />
-          <MainQuick />
-        </div>
-      </main>
+      <div className="container">
+        <MainOutstanding />
+        <MainDelivery />
+        <MainReputation />
+      </div>
+      <MainSending />
+      <div className="container">
+        <MainUtilize />
+        <MainQuick />
+      </div>
     </ClientLayout>
   );
 }
