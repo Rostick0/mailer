@@ -78,23 +78,19 @@ export default function RegisterForm() {
           />
         </div>
         <div className={styles.register_form__checkboxs}>
-          <Checkbox>
-            I understand that if I lose my password, I may lose my data. Read
-            more about MegaMailer.io end-to-end encryption.
-          </Checkbox>
-          <Checkbox>
-            I have read and understand MegaMailer.io Terms of Service
-          </Checkbox>
+          <Checkbox>{t("registerFormCheckbox1")}</Checkbox>
+          <Checkbox>{t("registerFormCheckbox2")}</Checkbox>
         </div>
       </div>
       <Button
         className={styles.register_form__button}
         onClick={() => console.log(errors.name)}
       >
-        {t("registerFormSubmit")}
+        {t("logIn")}
       </Button>
       <div>
-        Already have an account? <MyLink to={ROUTE_NAMES.login}>Log in</MyLink>
+        {t("registerFormAlready")}{" "}
+        <MyLink to={ROUTE_NAMES.login}>{t("logIn")}</MyLink>
       </div>
     </form>
   );

@@ -1,6 +1,6 @@
 import { setClassName } from "../../app/utils/class";
 import stylesInput from "../../ui/Input/style.module.scss";
-import Control from "../../components/Control";
+import Control from "../../ui/Control";
 
 export default function InputForm({
   className,

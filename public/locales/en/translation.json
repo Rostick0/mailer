@@ -2,6 +2,7 @@
   "lang": "EN",
   "theme_dark": "Dark",
   "theme_light": "Light",
+
   "headerNavProducts": "Products",
   "headerNavMailer": "Mailer",
   "headerNavPackages": "Packages",
@@ -18,11 +19,14 @@
   "headerNavTicketSystem": "Ticket System",
   "headerNavTelegramSupport": "Telegram Support",
   "headerNavLiveChatSupport": "LiveChat Support",
+
   "logIn": "Log In",
   "signUp": "Sign Up",
+
   "outstandingTitle": "Outstanding email deliverability guaranteed",
   "outstandingDescription": "As the industry leader in deliverability, we invite you to experience MegaMailer.io firsthand to understand why our customers rave about us. Many who depart eventually return, attesting to the unparalleled quality of our service.",
   "outstandingButton": "Try it for free",
+
   "deliveryTitle": "Unlock the full potential of email delivery with our comprehensive suite of services",
   "deliverySubTitle": "At MegaMailer.io, our primary objective is to ensure your emails reach subscriber inboxes. Alongside maintaining a pristine IP reputation among ISPs and providing top-tier email sending capabilities, we boast in-house experts ready to address all your inquiries.",
   "deliveryItemTitle1": "Simple adaptation",
@@ -31,6 +35,7 @@
   "deliveryItemDeescription2": "From a few thousand emails per month to billions, MegaMailer.io effortlessly scales to ensure timely and reliable sending.",
   "deliveryItemTitle3": "Fast delivery",
   "deliveryItemDeescription3": "For over two decades, businesses have relied on our exceptional deliverability rates and reputation among mailbox providers.",
+
   "reputationTitle": "MegaMailer.io Reputation Defender",
   "reputationDescription": "Reputation Defender proactively monitors your email list health, safeguarding your domain and IP reputation by identifying and suppressing invalid email addresses before you send. <br /><br /> This ensures that your delivery rates and inbox placement continually improve over time.",
   "reputationMore": "More about security",
@@ -42,6 +47,7 @@
   "reputationDescription3": "Configuration takes place without the need for integration",
   "reputationTitle4": "Reputation protection",
   "reputationDescription4": "A feature that will allow you to improve the quality of emails",
+
   "sendingTitle": "MegaMailer.io Reputation Defender",
   "sendingDescription": "MegaMailer.io has a purpose-built solution just for you <br /><br /> High volume senders have unique requirements. We provide a rapidly scalable, on-demand solution tailored to your specific sending needs. Like all our customers, high volume senders benefit from MegaMailer.io outstanding deliverability and over 20 years of email expertise.",
   "sendingMore": "See our plans",
@@ -53,6 +59,7 @@
   "sendingDescription3": "Automated email address validation within the app protects domain and sending reputation with ISPs.",
   "sendingTitle4": "Individual Manager",
   "sendingDescription4": "You can discuss any questions and extensions with your personal manager",
+
   "utilizeTitle": "Utilize MegaMailer.io for all your email sending requirements",
   "utilizeButton": "Try it for free",
   "utilizeItemTitle1": "NOTIFICATIONS",
@@ -67,9 +74,11 @@
   "utilizeItemDescription5": "Re-engage users by delivering timely status updates on their account and product usage.",
   "utilizeItemTitle6": "POLICY CHANGE EMAILS",
   "utilizeItemDescription6": "Guarantee that critical policy change information emails reach your users promptly.",
+
   "quickTitle": "Quick registration",
   "quickDescription": "Open access to all the functions of our platform now and get the maximum functionality of your emails.",
   "quickButton": "Registration",
+
   "footerPrivacy": "The Privacy Company.",
   "footerEncrypted": " User-encrypted cloud services<br /> ©MegaMailer.io 2024 All rights reserved",
   "footerMenuProducts": "Products",
@@ -96,8 +105,22 @@
   "footerMenuAboutUs": "About us",
   "footerMenuCareers": "Careers",
   "footerMenuMedia": "Media",
+
   "registerTitle": "Create a Free Account",
   "registerFormSubmit": "Create account",
+  "registerFormCheckbox1": "I understand that if I lose my password, I may lose my data. Read more about MegaMailer.io end-to-end encryption.",
+  "registerFormCheckbox2": "I have and understand MegaMailer.io Terms of Service",
+  "registerFormAlready": "Already have an account?",
+
+  "loginTitle": "Log in",
+  "loginForgot": "Forgot your password?",
+  "loginFormCheckbox1": "I understand that if I lose my password, I may lose my data. Read more about MegaMailer.io end-to-end encryption.",
+  "loginDontAccount": "Don’t have an account?",
+  "loginRegister": "Create one now",
+
+  "confirmTitle": "Confirm your account",
+  "confirmFormSubmit": "Confirm your account",
+
   "formFirstName": "First name",
   "formLastName": "Last name",
   "formEmail": "Email",
