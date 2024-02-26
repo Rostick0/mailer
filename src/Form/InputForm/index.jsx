@@ -10,6 +10,7 @@ export default function InputForm({
   register,
   name = "",
   rules = {},
+  icon,
   ...other
 }) {
   return (
@@ -20,6 +21,7 @@ export default function InputForm({
           {...register(name, rules)}
           {...other}
         />
+        {icon}
       </div>
     </Control>
   );
