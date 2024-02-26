@@ -9,3 +9,10 @@
         text-transform: uppercase;
     }
 }
+
+.style-block {
+    background: var(--fourth-color);
+    border-radius: 8px;
+    box-shadow: 12px 0 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 32px 40px;
+}

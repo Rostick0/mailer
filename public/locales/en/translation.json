@@ -95,5 +95,14 @@
   "footerMenuCompany": "Company",
   "footerMenuAboutUs": "About us",
   "footerMenuCareers": "Careers",
-  "footerMenuMedia": "Media"
+  "footerMenuMedia": "Media",
+  "registerTitle": "Create a Free Account",
+  "registerFormSubmit": "Create account",
+  "formFirstName": "First name",
+  "formLastName": "Last name",
+  "formEmail": "Email",
+  "formPassword": "Password",
+  "formPasswordConfirm": "Retype password",
+
+  "form_required": "Поле обязательно"
 }
