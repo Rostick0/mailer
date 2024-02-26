@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import styles from "./style.module.scss";
 import Title from "../../ui/Title";
 import Item from "../Item";
+import Button from "../../ui/Button";
 
 export default function ContactHelp() {
   const { t } = useTranslation();
@@ -29,6 +30,7 @@ export default function ContactHelp() {
           </defs>
         </svg>
       ),
+      onClick: null,
     },
     {
       svg: (
@@ -52,6 +54,7 @@ export default function ContactHelp() {
           </defs>
         </svg>
       ),
+      onClick: null,
     },
   ];
 
@@ -68,6 +71,11 @@ export default function ContactHelp() {
             svg={item.svg}
             title={t("contactHelpItemTitle" + (index + 1))}
             description={t("contactHelpItemDescription" + (index + 1))}
+            action={
+              <Button onClick={item.onClick}>
+                {t("contactHelpItemButton" + (index + 1))}
+              </Button>
+            }
           />
           // contactHelpItemButton
         ))}
