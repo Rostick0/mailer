@@ -1,31 +1,5 @@
 .switch {
-  border: 1px solid var(--second-color);
-  border-radius: 8px;
-  padding: 20px 40px;
-
-  &.active {
-    .switch__content {
-      transition: 1s;
-      transition-timing-function: ease-in;
-      max-height: 5000px;
-    }
-  }
-
-  &__title {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 24px;
-    font-weight: 900;
-  }
-
-  &__content {
-    transition: 0.75s;
-    transition-timing-function: ease-out;
-    overflow: hidden;
-    max-height: 0;
-  }
+  background-color: var(--fourth-color);
 
   &__description {
     margin-top: 16px;
