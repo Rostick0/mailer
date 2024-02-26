@@ -1,4 +1,5 @@
 import { setClassName } from "../../app/utils/class";
+import styles from "./style.module.scss";
 import stylesInput from "../../ui/Input/style.module.scss";
 import Control from "../../ui/Control";
 
@@ -11,14 +12,15 @@ export default function InputForm({
   rules = {},
   ...other
 }) {
-
   return (
     <Control className={className} label={label} error={error}>
-      <input
-        className={stylesInput.input}
-        {...register(name, rules)}
-        {...other}
-      />
+      <div className={styles.field}>
+        <input
+          className={stylesInput.input}
+          {...register(name, rules)}
+          {...other}
+        />
+      </div>
     </Control>
   );
 }
