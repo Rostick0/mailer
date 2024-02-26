@@ -14,21 +14,35 @@ const Proxy = lazy(() => import("../pages/Proxy"));
 const Register = lazy(() => import("../pages/Register"));
 const SMTP = lazy(() => import("../pages/SMTP"));
 
+export const ROUTE_NAMES = {
+  confirm: "/confirm",
+  contact: "/contact",
+  faq: "/faq",
+  main: "/",
+  imap: "/imap",
+  login: "/login",
+  mailing: "/mailing",
+  pricing: "/pricing",
+  proxy: "/proxy",
+  register: "/register",
+  smtp: "/smtp",
+};
+
 const AppRouter = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        <Route path="/confirm" element={<Confirm />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/faq" element={<Faq />}></Route>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/imap" element={<IMAP />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/mailing" element={<Mailing />}></Route>
-        <Route path="/pricing" element={<Pricing />}></Route>
-        <Route path="/proxy" element={<Proxy />}></Route>
-        <Route path="/register" element={<Register />}></Route>
-        <Route path="/smtp" element={<SMTP />}></Route>
+        <Route path={ROUTE_NAMES.confirm} element={<Confirm />}></Route>
+        <Route path={ROUTE_NAMES.contact} element={<Contact />}></Route>
+        <Route path={ROUTE_NAMES.faq} element={<Faq />}></Route>
+        <Route path={ROUTE_NAMES.main} element={<Home />}></Route>
+        <Route path={ROUTE_NAMES.imap} element={<IMAP />}></Route>
+        <Route path={ROUTE_NAMES.login} element={<Login />}></Route>
+        <Route path={ROUTE_NAMES.mailing} element={<Mailing />}></Route>
+        <Route path={ROUTE_NAMES.pricing} element={<Pricing />}></Route>
+        <Route path={ROUTE_NAMES.proxy} element={<Proxy />}></Route>
+        <Route path={ROUTE_NAMES.register} element={<Register />}></Route>
+        <Route path={ROUTE_NAMES.smtp} element={<SMTP />}></Route>
       </Routes>
     </Suspense>
   );

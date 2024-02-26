@@ -1,6 +1,6 @@
 .btn {
   background-color: var(--first-color);
-  color: var(--fourth-color);
+  color: #fafafa;
   border-radius: 8px;
   font-size: 16px;
   transition: 0.3s;
@@ -8,5 +8,16 @@
 
   &:hover {
     background-color: var(--second-color);
+  }
+
+  &.outlined {
+    background-color: transparent;
+    color: var(--first-color);
+    border: 1px solid var(--first-color);
+
+    &:hover {
+      color: var(--second-color);
+      border-color: var(--second-color);
+    }
   }
 }

@@ -3,3 +3,9 @@
     width: 100%;
     max-width: 1320px;
 }
+
+.text {
+    &-uppercase {
+        text-transform: uppercase;
+    }
+}

@@ -1,4 +1,8 @@
 .header {
+  padding: 32px 0 68px;
+  position: relative;
+  z-index: 2;
+
   &__container {
     display: flex;
     align-items: center;
@@ -8,12 +12,25 @@
     margin-right: 40px;
   }
 
-  &__button {
-    padding: 8px 48px;
+  &__action {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-weight: 500;
 
     &s {
       display: flex;
-      column-gap: 12px;
+      column-gap: 27px;
     }
+  }
+
+  .header__button {
+    padding: 8px 48px;
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: 12px;
   }
 }

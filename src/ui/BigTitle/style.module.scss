@@ -1,0 +1,14 @@
+.title {
+  color: var(--third-color);
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  &.center {
+    text-align: center;
+  }
+
+  &.right {
+    text-align: right;
+  }
+}
