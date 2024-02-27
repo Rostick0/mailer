@@ -1,8 +1,9 @@
-.confirm {
+.confirm_form {
   display: flex;
   align-items: center;
   flex-direction: column;
   row-gap: 40px;
+  flex-grow: 1;
 
   &__input {
     width: 100%;

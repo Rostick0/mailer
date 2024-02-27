@@ -21,7 +21,7 @@ export default function ConfirmForm() {
       className={styles.confirm_form + " style-block"}
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div>
+      <div style={{ width: "100%" }}>
         <div className={styles.confirm_form__inputs}>
           <InputForm
             className={styles.confirm_form__input}
