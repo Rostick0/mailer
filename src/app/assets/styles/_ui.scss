@@ -1,18 +1,27 @@
 .container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1320px;
 }
 
 .text {
-    &-uppercase {
-        text-transform: uppercase;
-    }
+  &-uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.link {
+  color: var(--first-color);
+  transition: 0.3s;
+
+  &:hover {
+    color: var(--second-color);
+  }
 }
 
 .style-block {
-    background: var(--fourth-color);
-    border-radius: 8px;
-    box-shadow: 12px 0 20px 0 rgba(0, 0, 0, 0.2);
-    padding: 32px 40px;
+  background: var(--fourth-color);
+  border-radius: 8px;
+  box-shadow: 12px 0 20px 0 rgba(0, 0, 0, 0.2);
+  padding: 32px 40px;
 }
