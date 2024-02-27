@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./style.module.scss";
 import TitleSmall from "../../ui/TitleSmall";
 import Title from "../../ui/Title";
@@ -7,14 +6,10 @@ import TitleMiddle from "../../ui/TitleMiddle";
 import P from "../../ui/P";
 import Ul from "../../ui/Ul";
 import Line from "../../ui/Line";
+import FaqLinks from "../FaqLinks";
 
 export default function FaqContent() {
   const { t } = useTranslation();
-
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const switchItems = Array(7).fill(1);
-  console.log(switchItems);
 
   return (
     <div className={styles.faq_content}>
@@ -23,32 +18,25 @@ export default function FaqContent() {
       <div className={styles.faq_content__block}>
         <div className={styles.faq_content__left + " style-block"}>
           <TitleSmall variant="uppercase">{t("faqSwitchTitle")}</TitleSmall>
-          <ul className={styles.faq_content__list}>
-            {switchItems.map((item, index) => (
-              <li
-                className={
-                  styles.faq_content__item +
-                  (index === activeIndex ? " " + styles.actinve : "")
-                }
-                key={index}
-                onClick={() => setActiveIndex(index)}
-              >
-                {t("faqSwitchItem" + (index + 1))}
-              </li>
-            ))}
-          </ul>
+          <FaqLinks />
         </div>
         <div className={styles.faq_content__right}>
           <div className={styles.faq_content__paragraph}>
             <TitleMiddle>{t("faqTextBigTitle")}</TitleMiddle>
             <P>{t("faqTextContent1")}</P>
           </div>
-          <div className={styles.faq_content__paragraph}>
+          <div
+            className={styles.faq_content__paragraph}
+            id="reportVulnerabilities"
+          >
             <TitleSmall>{t("faqTextTitle1")}</TitleSmall>
             <P>{t("faqTextContent2")}</P>
             <P>{t("faqTextContent3")}</P>
           </div>
-          <div className={styles.faq_content__paragraph}>
+          <div
+            className={styles.faq_content__paragraph}
+            id="qualifyingVulnerabilities"
+          >
             <TitleSmall>{t("faqTextTitle2")}</TitleSmall>
             <Ul>
               <li>{t("faqTextTitleLi1")}</li>
@@ -59,7 +47,10 @@ export default function FaqContent() {
               <li>{t("faqTextTitleLi6")}</li>
             </Ul>
           </div>
-          <div className={styles.faq_content__paragraph}>
+          <div
+            className={styles.faq_content__paragraph}
+            id="scopeVulnerabilities"
+          >
             <TitleSmall>{t("faqTextTitle3")}</TitleSmall>
             <Ul>
               <li>{t("faqTextTitleLi7")}</li>
@@ -75,11 +66,14 @@ export default function FaqContent() {
               <li>{t("faqTextTitleLi17")}</li>
             </Ul>
           </div>
-          <div className={styles.faq_content__paragraph}>
+          <div className={styles.faq_content__paragraph} id="specialScenarios">
             <TitleSmall>{t("faqTextTitle4")}</TitleSmall>
             <P dangerouslySetInnerHTML={{ __html: t("faqTextContent4") }}></P>
           </div>
-          <div className={styles.faq_content__paragraph}>
+          <div
+            className={styles.faq_content__paragraph}
+            id="vulnerabilitiesClassified"
+          >
             <TitleSmall>{t("faqTextTitle5")}</TitleSmall>
             <P>{t("faqTextContent5")}</P>
             <Ul>
@@ -108,19 +102,19 @@ export default function FaqContent() {
               ></li>
             </Ul>
           </div>
-          <div className={styles.faq_content__paragraph}>
+          <div className={styles.faq_content__paragraph} id="howMuchRewarded">
             <TitleSmall>{t("faqTextTitle6")}</TitleSmall>
             <P dangerouslySetInnerHTML={{ __html: t("faqTextContent6") }}></P>
           </div>
-          <div className={styles.faq_content__paragraph}>
+          <div className={styles.faq_content__paragraph} id="eligible">
             <TitleSmall>{t("faqTextTitle7")}</TitleSmall>
             <P>{t("faqTextContent7")}</P>
           </div>
-          <div className={styles.faq_content__paragraph}>
+          <div className={styles.faq_content__paragraph} id="validity">
             <TitleSmall>{t("faqTextTitle8")}</TitleSmall>
             <P>{t("faqTextContent8")}</P>
           </div>
-          <div className={styles.faq_content__paragraph}>
+          <div className={styles.faq_content__paragraph} id="HowLong">
             <TitleSmall>{t("faqTextTitle9")}</TitleSmall>
             <P>{t("faqTextContent9")}</P>
           </div>
