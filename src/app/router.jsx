@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 const Confirm = lazy(() => import("../pages/Confirm"));
 const Contact = lazy(() => import("../pages/Contact"));
 const Faq = lazy(() => import("../pages/Faq"));
+const Help = lazy(() => import("../pages/Help"));
 const Home = lazy(() => import("../pages/Home"));
 const IMAP = lazy(() => import("../pages/IMAP"));
 const Login = lazy(() => import("../pages/Login"));
@@ -18,6 +19,7 @@ export const ROUTE_NAMES = {
   confirm: "/confirm",
   contact: "/contact",
   faq: "/faq",
+  help: "/help",
   main: "/",
   imap: "/imap",
   login: "/login",
@@ -35,6 +37,7 @@ const AppRouter = () => {
         <Route path={ROUTE_NAMES.confirm} element={<Confirm />}></Route>
         <Route path={ROUTE_NAMES.contact} element={<Contact />}></Route>
         <Route path={ROUTE_NAMES.faq} element={<Faq />}></Route>
+        <Route path={ROUTE_NAMES.help} element={<Help />}></Route>
         <Route path={ROUTE_NAMES.main} element={<Home />}></Route>
         <Route path={ROUTE_NAMES.imap} element={<IMAP />}></Route>
         <Route path={ROUTE_NAMES.login} element={<Login />}></Route>

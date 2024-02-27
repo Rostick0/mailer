@@ -7,7 +7,7 @@ import InputForm from "../../Form/InputForm";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 
-export default function FaqHelp() {
+export default function HelpTop() {
   const { t } = useTranslation();
   const { register } = useForm();
 
@@ -25,12 +25,12 @@ export default function FaqHelp() {
           <path d="M20.0001 0C14.4794 0 10.3164 4.24672 10.3164 9.87789C10.3164 15.674 14.6605 20.3888 20.0001 20.3888C25.3397 20.3888 29.6838 15.674 29.6838 9.87836C29.6838 4.24672 25.5208 0 20.0001 0ZM20.0001 17.4696C16.2702 17.4696 13.2361 14.0642 13.2361 9.87836C13.2361 5.84625 16.0809 2.91969 20.0001 2.91969C23.8566 2.91969 26.7641 5.91094 26.7641 9.87836C26.7641 14.0642 23.73 17.4696 20.0001 17.4696Z" />
         </svg>
       ),
-      title: t("faqHelpItemTitle1"),
+      title: t("helpTopItemTitle1"),
       description: (
         <>
-          <Link to="/">{t("faqHelpItemLink11")}</Link>
-          <Link to="/">{t("faqHelpItemLink12")}</Link>
-          <Link to="/">{t("faqHelpItemLink13")}</Link>
+          <Link to="/">{t("helpTopItemLink11")}</Link>
+          <Link to="/">{t("helpTopItemLink12")}</Link>
+          <Link to="/">{t("helpTopItemLink13")}</Link>
         </>
       ),
       link: "/",
@@ -65,12 +65,12 @@ export default function FaqHelp() {
           </defs>
         </svg>
       ),
-      title: t("faqHelpItemTitle2"),
+      title: t("helpTopItemTitle2"),
       description: (
         <>
-          <Link to="/">{t("faqHelpItemLink21")}</Link>
-          <Link to="/">{t("faqHelpItemLink22")}</Link>
-          <Link to="/">{t("faqHelpItemLink23")}</Link>
+          <Link to="/">{t("helpTopItemLink21")}</Link>
+          <Link to="/">{t("helpTopItemLink22")}</Link>
+          <Link to="/">{t("helpTopItemLink23")}</Link>
         </>
       ),
       link: "/",
@@ -102,12 +102,12 @@ export default function FaqHelp() {
           <path d="M16.8753 23.125C16.7153 23.125 16.5553 23.0638 16.4328 22.9425L13.9328 20.4425C13.6891 20.1988 13.6891 19.8025 13.9328 19.5588L16.4328 17.0588C16.6766 16.815 17.0728 16.815 17.3166 17.0588C17.5603 17.3025 17.5603 17.6988 17.3166 17.9425L15.2591 20L17.3166 22.0575C17.5603 22.3012 17.5603 22.6975 17.3166 22.9413C17.1953 23.0638 17.0353 23.125 16.8753 23.125Z" />
         </svg>
       ),
-      title: t("faqHelpItemTitle3"),
+      title: t("helpTopItemTitle3"),
       description: (
         <>
-          <Link to="/">{t("faqHelpItemLink31")}</Link>
-          <Link to="/">{t("faqHelpItemLink32")}</Link>
-          <Link to="/">{t("faqHelpItemLink33")}</Link>
+          <Link to="/">{t("helpTopItemLink31")}</Link>
+          <Link to="/">{t("helpTopItemLink32")}</Link>
+          <Link to="/">{t("helpTopItemLink33")}</Link>
         </>
       ),
       link: "/",
@@ -128,12 +128,12 @@ export default function FaqHelp() {
           />
         </svg>
       ),
-      title: t("faqHelpItemTitle4"),
+      title: t("helpTopItemTitle4"),
       description: (
         <>
-          <Link to="/">{t("faqHelpItemLink41")}</Link>
-          <Link to="/">{t("faqHelpItemLink42")}</Link>
-          <Link to="/">{t("faqHelpItemLink43")}</Link>
+          <Link to="/">{t("helpTopItemLink41")}</Link>
+          <Link to="/">{t("helpTopItemLink42")}</Link>
+          <Link to="/">{t("helpTopItemLink43")}</Link>
         </>
       ),
       link: "/",
@@ -161,12 +161,12 @@ export default function FaqHelp() {
           </defs>
         </svg>
       ),
-      title: t("faqHelpItemTitle5"),
+      title: t("helpTopItemTitle5"),
       description: (
         <>
-          <Link to="/">{t("faqHelpItemLink51")}</Link>
-          <Link to="/">{t("faqHelpItemLink52")}</Link>
-          <Link to="/">{t("faqHelpItemLink53")}</Link>
+          <Link to="/">{t("helpTopItemLink51")}</Link>
+          <Link to="/">{t("helpTopItemLink52")}</Link>
+          <Link to="/">{t("helpTopItemLink53")}</Link>
         </>
       ),
       link: "/",
@@ -185,12 +185,12 @@ export default function FaqHelp() {
           <path d="M24.5457 2.72726H15.4548C13.9093 2.72726 12.7275 3.90906 12.7275 5.45453V6.36359C12.7275 6.90906 13.0912 7.27265 13.6366 7.27265C14.182 7.27265 14.5457 6.90898 14.5457 6.36359V5.45453C14.5457 4.90906 14.9093 4.54547 15.4547 4.54547H24.5457C25.0911 4.54547 25.4547 4.90914 25.4547 5.45453V6.36359C25.4547 6.90906 25.8184 7.27265 26.3638 7.27265C26.9093 7.27265 27.2729 6.90898 27.2729 6.36359V5.45453C27.273 3.90906 26.0912 2.72726 24.5457 2.72726Z" />
         </svg>
       ),
-      title: t("faqHelpItemTitle6"),
+      title: t("helpTopItemTitle6"),
       description: (
         <>
-          <Link to="/">{t("faqHelpItemLink61")}</Link>
-          <Link to="/">{t("faqHelpItemLink62")}</Link>
-          <Link to="/">{t("faqHelpItemLink63")}</Link>
+          <Link to="/">{t("helpTopItemLink61")}</Link>
+          <Link to="/">{t("helpTopItemLink62")}</Link>
+          <Link to="/">{t("helpTopItemLink63")}</Link>
         </>
       ),
       link: "/",
@@ -209,12 +209,12 @@ export default function FaqHelp() {
           <path d="M12.0539 36.5327C11.6497 36.5327 11.3213 36.2047 11.3213 35.8003C11.3213 35.3956 11.6488 35.0679 12.0535 35.0679H12.0539C12.4586 35.0679 12.7864 35.3956 12.7864 35.8003C12.7864 36.2047 12.4586 36.5327 12.0539 36.5327Z" />
         </svg>
       ),
-      title: t("faqHelpItemTitle7"),
+      title: t("helpTopItemTitle7"),
       description: (
         <>
-          <Link to="/">{t("faqHelpItemLink71")}</Link>
-          <Link to="/">{t("faqHelpItemLink72")}</Link>
-          <Link to="/">{t("faqHelpItemLink73")}</Link>
+          <Link to="/">{t("helpTopItemLink71")}</Link>
+          <Link to="/">{t("helpTopItemLink72")}</Link>
+          <Link to="/">{t("helpTopItemLink73")}</Link>
         </>
       ),
       link: "/",
@@ -245,11 +245,11 @@ export default function FaqHelp() {
           </defs>
         </svg>
       ),
-      title: t("faqHelpItemTitle8"),
+      title: t("helpTopItemTitle8"),
       description: (
         <>
-          <Link to="/">{t("faqHelpItemLink81")}</Link>
-          <Link to="/">{t("faqHelpItemLink82")}</Link>
+          <Link to="/">{t("helpTopItemLink81")}</Link>
+          <Link to="/">{t("helpTopItemLink82")}</Link>
         </>
       ),
       link: "/",
@@ -277,11 +277,11 @@ export default function FaqHelp() {
           </defs>
         </svg>
       ),
-      title: t("faqHelpItemTitle9"),
+      title: t("helpTopItemTitle9"),
       description: (
         <>
-          <Link to="/">{t("faqHelpItemLink91")}</Link>
-          <Link to="/">{t("faqHelpItemLink92")}</Link>
+          <Link to="/">{t("helpTopItemLink91")}</Link>
+          <Link to="/">{t("helpTopItemLink92")}</Link>
         </>
       ),
       link: "/",
@@ -289,16 +289,16 @@ export default function FaqHelp() {
   ];
 
   return (
-    <div className={styles.faq_help}>
-      <Title variant="center">{t("faqHelpTitle")}</Title>
-      <div className={styles.faq_help__subtitle}>{t("faqHelpSubtitle")}</div>
-      <form className={styles.faq_help__form}>
+    <div className={styles.help_top}>
+      <Title variant="center">{t("helpTopTitle")}</Title>
+      <div className={styles.help_top__subtitle}>{t("helpTopSubtitle")}</div>
+      <form className={styles.help_top__form}>
         <InputForm
           register={register}
           name="search"
           icon={
             <svg
-              className={styles.faq_help__icon}
+              className={styles.help_top__icon}
               width="15"
               height="15"
               viewBox="0 0 15 15"
@@ -310,7 +310,7 @@ export default function FaqHelp() {
           }
         />
       </form>
-      <ul className={styles.faq_help__list}>
+      <ul className={styles.help_top__list}>
         {list.map((item) => (
           <Item
             svg={item.svg}
@@ -318,7 +318,7 @@ export default function FaqHelp() {
             description={item.description}
             action={
               <MyLink to={item.link} withArrow>
-                {t("faqHelpViewAll")}
+                {t("helpTopViewAll")}
               </MyLink>
             }
             variant="red"
