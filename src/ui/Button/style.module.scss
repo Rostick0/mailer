@@ -1,8 +1,10 @@
 .btn {
   background-color: var(--first-color);
   color: #fafafa;
+  border: 1px solid transparent;
   border-radius: 8px;
   font-size: 16px;
+  font-weight: 500;
   transition: 0.3s;
   padding: 16px 40px;
 
