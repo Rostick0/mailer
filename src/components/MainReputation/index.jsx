@@ -26,7 +26,7 @@ export default function MainReputation() {
             <Item
               key={item}
               title={t("reputationTitle" + item)}
-              description={t("reputationDescription" + item)}
+              descriptionHtml={t("reputationDescription" + item)}
             ></Item>
           ))}
         </ul>

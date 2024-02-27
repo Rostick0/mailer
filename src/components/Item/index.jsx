@@ -6,6 +6,7 @@ export default function Item({
   svg,
   title,
   description,
+  descriptionHtml,
   action,
   variant,
 }) {
@@ -17,11 +18,16 @@ export default function Item({
       className={styles.item + styleClassName + styleVariant + " style-block"}
     >
       {svg}
-      <div className={styles.item__title}>{title}</div>
-      <div
-        className={styles.item__description}
-        dangerouslySetInnerHTML={{ __html: description }}
-      ></div>
+      {title && <div className={styles.item__title}>{title}</div>}
+      {description && (
+        <div className={styles.item__description}>{description}</div>
+      )}
+      {descriptionHtml && (
+        <div
+          className={styles.item__description}
+          dangerouslySetInnerHTML={{ __html: descriptionHtml }}
+        ></div>
+      )}
       {action && <div className={styles.item__action}>{action}</div>}
     </li>
   );

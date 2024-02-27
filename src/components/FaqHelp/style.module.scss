@@ -1,0 +1,29 @@
+.faq_help {
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__form {
+    input {
+      padding-right: 65px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+  }
+
+  &__icon {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+  }
+}

@@ -70,7 +70,7 @@ export default function ContactHelp() {
             variant="red"
             svg={item.svg}
             title={t("contactHelpItemTitle" + (index + 1))}
-            description={t("contactHelpItemDescription" + (index + 1))}
+            descriptionHtml={t("contactHelpItemDescription" + (index + 1))}
             action={
               <Button onClick={item.onClick}>
                 {t("contactHelpItemButton" + (index + 1))}

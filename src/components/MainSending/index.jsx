@@ -28,7 +28,7 @@ export default function MainSending() {
                 <Item
                   key={item}
                   title={t("sendingTitle" + item)}
-                  description={t("sendingDescription" + item)}
+                  descriptionHtml={t("sendingDescription" + item)}
                 ></Item>
               ))}
             </ul>

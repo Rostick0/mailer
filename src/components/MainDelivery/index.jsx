@@ -87,7 +87,7 @@ export default function MainDelivery() {
             variant="red"
             svg={item.svg}
             title={t("deliveryItemTitle" + (index + 1))}
-            description={t("deliveryItemDeescription" + (index + 1))}
+            descriptionHtml={t("deliveryItemDeescription" + (index + 1))}
           />
         ))}
       </ul>

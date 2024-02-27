@@ -38,7 +38,7 @@ export default function ContactMakeSwitch({
                     }
                     svg={item?.svg}
                     title={t("contactMakeItemItemTitle" + index + (i + 1))}
-                    description={t(
+                    descriptionHtml={t(
                       "contactMakeItemItemDescription" + index + (i + 1)
                     )}
                   />

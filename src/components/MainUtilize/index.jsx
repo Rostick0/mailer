@@ -164,7 +164,7 @@ export default function MainReputation() {
             key={index}
             svg={item.svg}
             title={t("utilizeItemTitle" + (index + 1))}
-            description={t("utilizeItemDescription" + (index + 1))}
+            descriptionHtml={t("utilizeItemDescription" + (index + 1))}
           ></Item>
         ))}
       </ul>
