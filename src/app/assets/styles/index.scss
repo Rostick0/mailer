@@ -12,3 +12,14 @@
   font-size: 16px;
   min-height: 100vh;
 }
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: #dedede;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--first-color);
+  border-radius: 8px;
+}
