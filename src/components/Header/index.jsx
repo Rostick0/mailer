@@ -6,7 +6,7 @@ import LangSvg from "../../app/svg/LangSvg";
 import ThemeSvg from "../../app/svg/ThemeSvg";
 import { useTheme } from "./../../app/context/ThemeContext";
 import HeaderNav from "../HeaderNav";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ROUTE_NAMES } from "../../app/router";
 
 export default function Header() {
@@ -18,7 +18,9 @@ export default function Header() {
     <header className={styles.header}>
       <div className="container">
         <div className={styles.header__container}>
-          <LogoSvg className={styles.header__logo} />
+          <Link to={ROUTE_NAMES.main}>
+            <LogoSvg className={styles.header__logo} />
+          </Link>
           <HeaderNav />
           <div className={styles.header__actions}>
             <div className={styles.header__action}>
@@ -30,8 +32,14 @@ export default function Header() {
               {theme === "light" ? t("theme_dark") : t("theme_light")}
             </div>
             <div className={styles.header__buttons}>
-              <Button className={styles.header__button} onClick={() => navigate(ROUTE_NAMES.login)} variant="outlined">{t("logIn")}</Button>
-              <Button className={styles.header__button} onClick={() => navigate(ROUTE_NAMES.register)}>{t("signUp")}</Button>
+              <Link to={ROUTE_NAMES.register}>
+                <Button className={styles.header__button} variant="outlined">
+                  {t("logIn")}
+                </Button>
+              </Link>
+              <Link to={ROUTE_NAMES.register}>
+                <Button className={styles.header__button}>{t("signUp")}</Button>
+              </Link>
             </div>
           </div>
         </div>

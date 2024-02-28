@@ -444,6 +444,20 @@
   "pricingTableItemName8": "Secure file sharing",
   "pricingTableItemName9": "Secure file sharing",
 
+  "headerAdminNotifications": "Notifications",
+  "headerAdminLinkSMTP": "SMTP",
+  "headerAdminLinkProxy": "Proxy",
+  "headerAdminLinkMailing": "Mailing",
+  "headerAdminLinkIMAP": "IMAP",
+  "headerAdminLinkSessionCampaign": "Session/Campaign",
+  "headerAdminLinkEmailbaseTable": "Emailbase Table",
+  "headerAdminLinkProxyTable": "Proxy Table",
+
+  "countryProxyTitle": "Sheck for country proxy",
+  "countryProxyContry": "Country",
+  "countryProxySession": "Session",
+  "countryProxyStatus": "Status",
+
   "formFirstName": "First name",
   "formLastName": "Last name",
   "formEmail": "Email",
