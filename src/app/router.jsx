@@ -13,7 +13,7 @@ const Mailing = lazy(() => import("../pages/Mailing"));
 const Pricing = lazy(() => import("../pages/Pricing"));
 const Proxy = lazy(() => import("../pages/Proxy"));
 const Register = lazy(() => import("../pages/Register"));
-const SMTP = lazy(() => import("../pages/SMTP"));
+const SMPT = lazy(() => import("../pages/SMPT"));
 
 export const ROUTE_NAMES = {
   confirm: "/confirm",
@@ -27,7 +27,7 @@ export const ROUTE_NAMES = {
   pricing: "/pricing",
   proxy: "/proxy",
   register: "/register",
-  smtp: "/smtp",
+  smpt: "/smpt",
 };
 
 const AppRouter = () => {
@@ -45,7 +45,7 @@ const AppRouter = () => {
         <Route path={ROUTE_NAMES.pricing} element={<Pricing />}></Route>
         <Route path={ROUTE_NAMES.proxy} element={<Proxy />}></Route>
         <Route path={ROUTE_NAMES.register} element={<Register />}></Route>
-        <Route path={ROUTE_NAMES.smtp} element={<SMTP />}></Route>
+        <Route path={ROUTE_NAMES.smpt} element={<SMPT />}></Route>
       </Routes>
     </Suspense>
   );

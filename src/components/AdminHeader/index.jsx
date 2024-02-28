@@ -11,8 +11,8 @@ export default function AdminHeader() {
 
   const menu = [
     {
-      link: ROUTE_NAMES.smtp,
-      name: t("headerAdminLinkSMTP"),
+      link: ROUTE_NAMES.smpt,
+      name: t("headerAdminLinkSMPT"),
     },
     {
       link: ROUTE_NAMES.proxy,
@@ -68,9 +68,9 @@ export default function AdminHeader() {
               >
                 <path
                   d="M7.91667 16.6667C7.91667 16.6667 8.33333 17.5 10 17.5C11.6667 17.5 12.0833 16.6667 12.0833 16.6667M14.5833 9.16667V7.08333C14.5833 4.55203 12.5313 2.5 10 2.5C7.46869 2.5 5.41667 4.55203 5.41667 7.08333V9.16667L4.44036 10.143C3.99833 10.585 3.75 11.1845 3.75 11.8096C3.75 13.1114 4.80527 14.1667 6.10702 14.1667H13.893C15.1947 14.1667 16.25 13.1114 16.25 11.8096C16.25 11.1845 16.0017 10.585 15.5596 10.143L14.5833 9.16667Z"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               {t("headerAdminNotifications")}
@@ -82,8 +82,9 @@ export default function AdminHeader() {
           </div>
         </div>
         <div className={styles.header__bottom}>
-          {menu.map((item) => (
+          {menu.map((item, i) => (
             <Link
+              key={i}
               className={
                 styles.header__link +
                 (location?.pathname === item.link ? " " + styles.active : "")

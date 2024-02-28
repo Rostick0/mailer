@@ -30,9 +30,9 @@ export default function Spoiler({ title, content }) {
           <path
             d="M17 9.5L12 14.5L7 9.5"
             stroke="var(--third-color)"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       </div>

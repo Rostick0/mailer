@@ -29,3 +29,29 @@
   box-shadow: 12px 0 20px 0 rgba(0, 0, 0, 0.2);
   padding: 32px 40px;
 }
+
+.form {
+  &-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  &-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 24px;
+
+    &__many {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 24px;
+    }
+  }
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+}

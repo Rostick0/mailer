@@ -1,0 +1,35 @@
+.smpt_form {
+  margin-bottom: 60px;
+ 
+  &__top {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 28px;
+  }
+
+  &__host {
+    color: var(--fifth-color);
+  }
+
+  &__file {
+    padding: 8px 40px;
+    margin-left: auto;
+  }
+
+  &__application {
+    margin-bottom: 28px;
+  }
+
+  &__form {
+    &_content {
+      display: flex;
+      align-items: flex-start;
+      column-gap: 48px;
+    }
+  }
+
+  &__fields {
+    flex-grow: 1;
+  }
+}

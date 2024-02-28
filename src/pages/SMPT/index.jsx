@@ -1,7 +1,8 @@
 import AdminLayout from "../../layout/AdminLayout";
 import CountryProxy from "../../components/CountryProxy";
+import SmptForm from "../../components/SmptForm";
 
-export default function SMTP() {
+export default function SMPT() {
   const countries = [
     {
       id: 1,
@@ -64,6 +65,7 @@ export default function SMTP() {
   return (
     <AdminLayout>
       <div className="container">
+        <SmptForm />
         <CountryProxy countries={countries} />
       </div>
     </AdminLayout>

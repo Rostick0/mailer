@@ -25,8 +25,8 @@ export default function CountryProxy({ countries }) {
           </thead>
           <tbody>
             {countries?.length &&
-              countries?.map((item) => (
-                <tr>
+              countries?.map((item, index) => (
+                <tr key={index}>
                   <td className={styles.country_proxy__td}>
                     <div className={styles.country_proxy__country}>
                       <img
