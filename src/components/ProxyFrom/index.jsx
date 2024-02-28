@@ -136,10 +136,10 @@ export default function ProxyFrom() {
             <CheckboxForm register={register} name="socks">
               {t("proxyFormCheckbox2")}
             </CheckboxForm>
-            <CheckboxForm register={register} name="use_proxy">
+            <CheckboxForm register={register} variant="arrow" name="use_proxy">
               {t("proxyFormCheckbox3")}
             </CheckboxForm>
-            <CheckboxForm register={register} name="download_every">
+            <CheckboxForm register={register} variant="arrow" name="download_every">
               {t("proxyFormCheckbox4")}
             </CheckboxForm>
           </div>
