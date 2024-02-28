@@ -13,6 +13,11 @@
   min-height: 100vh;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--first-color) #dedede;
+}
+
 *::-webkit-scrollbar {
   width: 8px;
 }
