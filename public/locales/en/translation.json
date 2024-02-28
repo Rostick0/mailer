@@ -465,7 +465,6 @@
   "smptFormButton3": "Clear SMPT clipboard",
   "smptFormButton4": "Start check",
   "smptFormButton5": "Recheck all SMPT",
-
   "smptFormInput1": "Threads for SMPT",
   "smptFormInput2": "SMPT connecttion timeout (sec)",
   "smptFormInput3": "Not more than",
@@ -477,6 +476,16 @@
   "smptFormInput9": "Recipients for sending one massage (TO)",
   "smptFormInput10": "HELO",
   "smptFormCheckbox1": "Check with mailing template",
+
+  "proxyFormTitle": "Proxy",
+  "proxyFormButton1": "Select prosy file",
+  "proxyFormButton2": "Clear proxy list",
+  "proxyFormInput1": "Prosy list link",
+  "proxyFormInput2": "Time (min)",
+  "proxyFormCheckbox1": "HTTPS",
+  "proxyFormCheckbox2": "SOCKS5",
+  "proxyFormCheckbox3": "Use Proxy",
+  "proxyFormCheckbox4": "Download proxy from link every",
 
   "adminIndicatorsTitle": "Indicators",
   "adminIndicators1": "Shells for check",

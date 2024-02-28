@@ -1,4 +1,3 @@
-import { setClassName } from "../../app/utils/class";
 import styles from "./style.module.scss";
 import stylesInput from "../../ui/Input/style.module.scss";
 import Control from "../../ui/Control";

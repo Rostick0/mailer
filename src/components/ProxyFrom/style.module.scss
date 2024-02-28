@@ -1,4 +1,4 @@
-.smpt_form {
+.proxy_form {
   margin-bottom: 60px;
  
   &__top {
@@ -8,11 +8,7 @@
     margin-bottom: 28px;
   }
 
-  &__host {
-    color: var(--fifth-color);
-  }
-
-  .smpt_form__file {
+  .proxy_form__file {
     padding: 8px 40px;
     margin-left: auto;
   }
