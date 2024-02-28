@@ -1,4 +1,5 @@
 import PricingChoose from "../../components/PricingChoose";
+import PricingTable from "../../components/PricingTable";
 import ClientLayout from "../../layout/ClientLayout";
 import styles from "./style.module.scss";
 
@@ -11,6 +12,7 @@ export default function Pricing() {
         <div className="container">
           <div className={styles.pricing__content}>
             <PricingChoose />
+            <PricingTable />
             {/* <FaqContent /> */}
           </div>
         </div>

@@ -12,7 +12,7 @@ export default function MyLink({
 
   return (
     <Link className={styles.link + styleClassName} {...other}>
-      <span>{children}</span>
+      <span className={styles.link__children}>{children}</span>
       {withArrow && (
         <svg
           className={styles.link__arrow}
