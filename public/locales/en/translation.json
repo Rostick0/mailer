@@ -505,6 +505,13 @@
   "adminIndicators15": "Time passed",
   "adminIndicators16": "Time left ",
 
+  "mailingFormTitle": "Mailing",
+  "mailingFormCheckbox1": "Use random template (from selected)",
+  "smptFormTextareaLabel1": "Prosy list link",
+  "mailingFormButton1": "Save",
+  "mailingFormButton2": "Remove",
+  "mailingFormButton3": "Show",
+
   "formFirstName": "First name",
   "formLastName": "Last name",
   "formEmail": "Email",
