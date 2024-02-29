@@ -101,7 +101,7 @@ export default function MailingForm() {
           <TextareaForm
             register={register}
             name="list"
-            label={t("smptFormTextareaLabel1")}
+            label={t("smptFormTextarea1")}
             rows={10}
           />
           <div className={styles.mailing_form__application + " btns"}>

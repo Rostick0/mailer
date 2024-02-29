@@ -8,7 +8,7 @@ export default function LoadSvg({ className, width = 21, height = 20 }) {
       fill="var(--third-color)"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_104_3965)">
+      <g clipPath="url(#clip0_104_3965)">
         <path d="M10.3642 4.26852C9.9732 4.26852 9.65625 3.9516 9.65625 3.56059V0.70793C9.65625 0.316914 9.9732 0 10.3642 0C10.7552 0 11.0721 0.316914 11.0721 0.70793V3.56063C11.0721 3.9516 10.7552 4.26852 10.3642 4.26852Z" />
         <path
           opacity="0.52"

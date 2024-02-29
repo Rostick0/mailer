@@ -22,4 +22,11 @@
       border-color: var(--second-color);
     }
   }
+
+  &.black {
+    border: 1px solid var(--fourth-color);
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+
+  }
 }

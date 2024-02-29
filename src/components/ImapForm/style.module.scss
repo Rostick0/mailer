@@ -1,0 +1,17 @@
+.imap_form {
+  margin-bottom: 40px;
+  
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 48px;
+    margin-top: 28px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    row-gap: 20px;
+  }
+}

@@ -1,0 +1,26 @@
+.servers {
+  &__table {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 28px;
+
+    &_item {
+      display: flex;
+      column-gap: 24px;
+
+      &._name {
+        .servers__table_item_ip {
+          font-size: 16px;
+        }
+      }
+
+      &_ip {
+        font-size: 24px;
+        display: flex;
+        width: 100%;
+        max-width: 424px;
+      }
+    }
+  }
+}
