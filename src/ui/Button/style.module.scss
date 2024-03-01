@@ -27,6 +27,10 @@
     border: 1px solid var(--fourth-color);
     background-color: var(--third-color);
     color: var(--fourth-color);
+  }
 
+  @media (max-width: 920px) {
+    font-size: 14px;
+    padding: 14px 32px;
   }
 }

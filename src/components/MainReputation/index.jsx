@@ -17,9 +17,11 @@ export default function MainReputation() {
             className={styles.reputation__description}
             dangerouslySetInnerHTML={{ __html: t("reputationDescription") }}
           ></div>
-          <MyLink to="/" withArrow={true}>
-            {t("reputationMore")}
-          </MyLink>
+          <span>
+            <MyLink to="/" withArrow={true}>
+              {t("reputationMore")}
+            </MyLink>
+          </span>
         </div>
         <ul className={styles.reputation__list}>
           {list.map((item) => (

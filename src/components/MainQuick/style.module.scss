@@ -1,6 +1,6 @@
 .quick {
   display: flex;
-  column-gap: 24px;
+  grid-gap: 24px;
 
   &__left {
     display: flex;
@@ -8,5 +8,31 @@
     flex-direction: column;
     row-gap: 28px;
     padding-top: 77px;
+    max-width: 536px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  @media (max-width: 1100px) {
+    &__left {
+      row-gap: 16px;
+      padding-top: 0;
+    }
+  }
+
+  @media (max-width: 872px) {
+    flex-direction: column;
+
+    &__left {
+      max-width: 100%;
+    }
+
+    &__img {
+      display: block;
+      margin: 0 auto;
+      max-width: 500px;
+    }
   }
 }
