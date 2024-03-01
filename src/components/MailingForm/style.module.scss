@@ -7,7 +7,7 @@
   &__content {
     display: flex;
     align-items: flex-start;
-    column-gap: 48px;
+    grid-gap: 24px 48px;
     width: 100%;
   }
 
@@ -16,5 +16,15 @@
     flex-direction: column;
     row-gap: 28px;
     flex-grow: 1;
+  }
+
+  @media (max-width: 920px) {
+    &__form {
+      flex-basis: 100%;
+    }
+
+    &__content {
+      flex-wrap: wrap;
+    }
   }
 }

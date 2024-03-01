@@ -3,6 +3,12 @@
     display: flex;
     align-items: flex-start;
     column-gap: 10px;
+    flex-wrap: wrap;
     margin-top: 28px;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 661px;
   }
 }

@@ -52,7 +52,7 @@ export default function Header() {
                 {theme === "light" ? t("theme_dark") : t("theme_light")}
               </div>
               <div className={styles.header__buttons}>
-                <Link to={ROUTE_NAMES.register}>
+                <Link to={ROUTE_NAMES.login}>
                   <Button className={styles.header__button} variant="outlined">
                     {t("logIn")}
                   </Button>

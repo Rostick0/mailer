@@ -12,7 +12,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 24px;
-    margin-bottom: 24px;
     width: 100%;
 
     &_flex {
@@ -25,5 +24,13 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+  }
+
+  @media (max-width: 920px) {
+    row-gap: 20px;
+
+    &__inputs {
+      row-gap: 16px;
+    }
   }
 }

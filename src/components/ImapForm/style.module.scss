@@ -1,10 +1,10 @@
 .imap_form {
   margin-bottom: 40px;
-  
+
   &__content {
     display: flex;
     align-items: flex-start;
-    column-gap: 48px;
+    grid-gap: 24px 48px;
     margin-top: 28px;
   }
 
@@ -13,5 +13,11 @@
     flex-direction: column;
     flex-grow: 1;
     row-gap: 20px;
+  }
+
+  @media (max-width: 920px) {
+    &__content {
+      flex-wrap: wrap;
+    }
   }
 }

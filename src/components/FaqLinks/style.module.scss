@@ -28,4 +28,10 @@
       width: 2px;
     }
   }
+
+  @media (max-width: 920px) {
+    &__list {
+      row-gap: 14px;
+    }
+  }
 }

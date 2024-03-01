@@ -48,4 +48,10 @@
     right: 0;
     z-index: 1;
   }
+
+  @media (max-width: 920px) {
+    &__text {
+      row-gap: 16px;
+    }
+  }
 }

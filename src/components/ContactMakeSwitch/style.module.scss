@@ -7,11 +7,18 @@
 
   &__list {
     display: flex;
-    column-gap: 20px;
+    flex-wrap: wrap;
+    grid-gap: 20px;
     margin-top: 32px;
   }
 
   &__item {
-    flex: 1 1 100%;
+    flex: 1 0 calc(33% - 10px);
+  }
+
+  @media (max-width: 720px) {
+    &__item {
+      flex-basis: 100%;
+    }
   }
 }
