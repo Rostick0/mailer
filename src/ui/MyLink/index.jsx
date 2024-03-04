@@ -11,7 +11,7 @@ export default function MyLink({
   const styleClassName = setClassName(className);
 
   return (
-    <Link className={styles.link + styleClassName} {...other}>
+    <Link className={styles.link + styleClassName + " word-break"} {...other}>
       <span className={styles.link__children}>{children}</span>
       {withArrow && (
         <svg

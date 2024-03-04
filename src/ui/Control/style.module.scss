@@ -6,5 +6,9 @@
   &__error {
     color: var(--first-color);
     font-size: 12px;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
   }
 }

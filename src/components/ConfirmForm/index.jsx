@@ -22,13 +22,13 @@ export default function ConfirmForm() {
       onSubmit={handleSubmit(onSubmit)}
     >
       <div style={{ width: "100%" }}>
-        <div className={styles.confirm_form__inputs}>
+        <div className={styles.confirm_form__inputs +  " form-inputs"}>
           <InputForm
             className={styles.confirm_form__input}
             // register={register}
             // name="name"
             // rules={{ required: "true", minLength: 10 }}
-            error={errors.email?.message}
+            error={errors.email?.type}
             rules={{ required: true, minLength: 10 }}
             register={register}
             name="email"
@@ -37,7 +37,7 @@ export default function ConfirmForm() {
           />
           <InputForm
             className={styles.confirm_form__input}
-            error={errors.password?.message}
+            error={errors.password?.type}
             rules={{ required: true, minLength: 10 }}
             register={register}
             name="password"

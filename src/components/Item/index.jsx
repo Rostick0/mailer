@@ -1,4 +1,5 @@
 import { setClassName } from "../../app/utils/class";
+import TitleSmall from "../../ui/TitleSmall";
 import styles from "./style.module.scss";
 
 export default function Item({
@@ -18,7 +19,7 @@ export default function Item({
       className={styles.item + styleClassName + styleVariant + " style-block"}
     >
       {svg}
-      {title && <div className={styles.item__title}>{title}</div>}
+      {title && <TitleSmall className={styles.item__title}>{title}</TitleSmall>}
       {description && (
         <div className={styles.item__description}>{description}</div>
       )}

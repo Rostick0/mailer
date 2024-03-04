@@ -3,7 +3,7 @@
     display: flex;
     align-items: flex-start;
     column-gap: 10px;
-    margin-top: 28px;
+    margin-top: var(--indentation);
   }
 
   &__img {

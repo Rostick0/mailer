@@ -15,14 +15,14 @@ export default function TextareaForm({
 }) {
   return (
     <Control className={className} label={label} error={error}>
-      <div className={styles.field}>
+      <span className={styles.field}>
         <textarea
           className={stylesInput.textarea}
           {...register(name, rules)}
           {...other}
         >{children}</textarea>
         {icon}
-      </div>
+      </span>
     </Control>
   );
 }

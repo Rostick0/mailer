@@ -1,7 +1,7 @@
 .spoiler {
   border: 1px solid var(--second-color);
   border-radius: 8px;
-  padding: 20px 40px;
+  padding: var(--indentation-small) var(--indentation-big);
 
   &.active {
     .spoiler__content {
@@ -15,16 +15,21 @@
     }
   }
 
-  &__title {
+  &__switch {
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 24px;
+  }
+
+  &__title {
+    color: var(--third-color);
     font-weight: 900;
+    text-transform: initial;
   }
 
   &__arrow {
+    flex-shrink: 0;
     transition: 0.5s;
   }
 

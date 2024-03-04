@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     grid-gap: 24px 72px;
-    margin: 28px 0;
+    margin: var(--indentation) 0;
 
     &_item {
       box-shadow: none;
@@ -11,7 +11,7 @@
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      row-gap: 20px;
+      row-gap: var(--indentation-small);
       text-align: center;
       transition: 0.3s;
       max-width: 400px;
@@ -23,48 +23,49 @@
   }
 
   &__prices {
-    margin-bottom: 40px;
+    margin-bottom: var(--indentation-big);
   }
 
   &__list {
     display: flex;
-    grid-gap: 24px;
+    grid-gap: calc(var(--indentation) - 4px);
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 16px;
   }
 
   &__item {
-    flex-grow: 1;
-    width: 100%;
+    flex-shrink: 1;
+    flex-basis: calc(33.33% - ((var(--indentation) - 4px) * 0.75));
     max-width: 424px;
 
     &_price {
       color: var(--first-color);
-      font-size: 36px;
+      font-size: calc(var(--indentation-big) - 4px);
       font-weight: 900;
     }
 
     &_year {
-      margin: 8px 0 20px;
+      margin: 8px 0 var(--indentation-small);
     }
 
     &_storage {
       font-weight: 500;
-      margin-bottom: 32px;
+      margin-bottom: calc(var(--indentation) + 4px);
     }
   }
 
   &__forever {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 40px;
+    margin: 0 auto var(--indentation-big);
     max-width: 83%;
 
     &_ul {
       display: flex;
       flex-direction: column;
       row-gap: 12px;
-      margin-top: 20px;
+      margin-top: var(--indentation-small);
     }
 
     &_li {
@@ -78,14 +79,38 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      column-gap: 20px;
-      margin-bottom: 20px;
+      column-gap: var(--indentation-small);
+      margin-bottom: var(--indentation-small);
     }
 
     &_price {
       color: var(--first-color);
-      font-size: 64px;
+      font-size: calc(var(--indentation-ver-big) + 4px);
       font-weight: 900;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__item {
+      flex-basis: calc(50% - ((var(--indentation) - 4px) * 2));
+      max-width: initial;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__forever {
+      max-width: 100%;
+    }
+
+    &__item {
+      flex-basis: 100%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    &__forever {
+      flex-direction: column;
+      width: fit-content;
     }
   }
 }

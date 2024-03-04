@@ -1,8 +1,8 @@
 .chacking {
   display: flex;
   flex-direction: column;
-  row-gap: 28px;
-  margin-bottom: 28px;
+  row-gap: var(--indentation);
+  margin-bottom: var(--indentation);
 
   &__stats {
     color: var(--fifth-color);
@@ -47,6 +47,6 @@
   &__application {
     display: flex;
     flex-wrap: wrap;
-    grid-gap: 28px;
+    grid-gap: var(--indentation);
   }
 }

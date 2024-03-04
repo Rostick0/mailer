@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import TitleMiddle from '../../ui/TitleMiddle';
 import styles from "./style.module.scss";
 
 export default function Spoiler({ title, content }) {
@@ -16,9 +17,9 @@ export default function Spoiler({ title, content }) {
     <div className={styles.spoiler + activeSwitchClass}>
       <div
         onClick={() => setActive((prev) => !prev)}
-        className={styles.spoiler__title}
+        className={styles.spoiler__switch}
       >
-        <span>{title}</span>
+        <TitleMiddle className={styles.spoiler__title}>{title}</TitleMiddle>
         <svg
           className={styles.spoiler__arrow}
           width="24"

@@ -6,8 +6,8 @@ export default function Title({ className, children, variant, ...other }) {
   const styleVariant = setClassName(styles[variant]);
 
   return (
-    <div className={styles.title + styleClassName + styleVariant} {...other}>
+    <h2 className={styles.title + styleClassName + styleVariant} {...other}>
       {children}
-    </div>
+    </h2>
   );
 }

@@ -15,6 +15,10 @@
   @media (max-width: 920px) {
     font-size: 14px;
   }
+
+  @media (max-width: 576px) {
+    font-size: 12px;
+  }
 }
 
 * {
@@ -22,13 +26,15 @@
   scrollbar-color: var(--first-color) #dedede;
 }
 
-*::-webkit-scrollbar {
-  width: 8px;
-}
-*::-webkit-scrollbar-track {
-  background: #dedede;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: var(--first-color);
-  border-radius: 8px;
+@media (min-width: 1024px) {
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background: #dedede;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--first-color);
+    border-radius: 8px;
+  }
 }

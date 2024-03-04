@@ -313,6 +313,7 @@ export default function HelpTop() {
       <ul className={styles.help_top__list}>
         {list.map((item) => (
           <Item
+            className={styles.help_top__item}
             svg={item.svg}
             title={item.title}
             description={item.description}

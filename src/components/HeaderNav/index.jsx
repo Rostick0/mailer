@@ -12,11 +12,11 @@ export default function HeaderNav() {
       items: [
         {
           title: "headerNavMailer",
-          link: "#",
+          link: ROUTE_NAMES.mailing,
         },
         {
           title: "headerNavPackages",
-          link: "#",
+          link: ROUTE_NAMES.imap,
         },
       ],
     },
@@ -25,15 +25,15 @@ export default function HeaderNav() {
       items: [
         {
           title: "headerNavAdvancedTechnology",
-          link: "#",
+          link: ROUTE_NAMES.proxy,
         },
         {
           title: "headerNavInbuiltTools",
-          link: "#",
+          link: ROUTE_NAMES.proxy,
         },
         {
           title: "headerNavAdvancedMailing",
-          link: "#",
+          link: ROUTE_NAMES.imap,
         },
       ],
     },
@@ -46,15 +46,15 @@ export default function HeaderNav() {
       items: [
         {
           title: "headerNavBasic",
-          link: "#",
+          link: ROUTE_NAMES.pricing,
         },
         {
           title: "headerNavPremium",
-          link: "#",
+          link: ROUTE_NAMES.pricing,
         },
         {
           title: "headerNavDeluxe",
-          link: "#",
+          link: ROUTE_NAMES.pricing,
         },
       ],
     },
@@ -63,15 +63,15 @@ export default function HeaderNav() {
       items: [
         {
           title: "headerNavTicketSystem",
-          link: "#",
+          link: ROUTE_NAMES.help,
         },
         {
           title: "headerNavTelegramSupport",
-          link: "#",
+          link: ROUTE_NAMES.help,
         },
         {
           title: "headerNavLiveChatSupport",
-          link: "#",
+          link: ROUTE_NAMES.faq,
         },
       ],
     },

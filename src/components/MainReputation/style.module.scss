@@ -2,7 +2,7 @@
   display: flex;
   align-items: flex-end;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: var(--indentation-big);
 
   &__left {
     padding-top: 40px;
@@ -14,8 +14,8 @@
   &__text {
     display: flex;
     flex-direction: column;
-    row-gap: 28px;
-    margin-bottom: 40px;
+    row-gap: var(--indentation);
+    margin-bottom: var(--indentation-big);
     max-width: 536px;
   }
 
@@ -34,7 +34,7 @@
     &_title {
       font-size: 20px;
       font-weight: 900;
-      margin-bottom: 20px;
+      margin-bottom: var(--indentation-small);
     }
 
     &_description {

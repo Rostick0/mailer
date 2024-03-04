@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: var(--indentation-big);
 
   &__content {
     display: flex;
@@ -14,7 +14,7 @@
   &__form {
     display: flex;
     flex-direction: column;
-    row-gap: 28px;
+    row-gap: var(--indentation);
     flex-grow: 1;
   }
 

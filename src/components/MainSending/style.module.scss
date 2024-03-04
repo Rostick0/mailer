@@ -20,10 +20,10 @@
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    row-gap: 28px;
+    row-gap: var(--indentation);
     text-align: right;
     margin-left: auto;
-    margin-bottom: 40px;
+    margin-bottom: var(--indentation-big);
     max-width: 536px;
   }
 
@@ -42,7 +42,7 @@
     &_title {
       font-size: 20px;
       font-weight: 900;
-      margin-bottom: 20px;
+      margin-bottom: var(--indentation-small);
     }
 
     &_description {

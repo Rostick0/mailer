@@ -9,11 +9,15 @@ export default function HeaderNavItem({ title, items, link = null }) {
 
   const activeClass = useMemo(() => (active ? " " + styles.item_active : ""));
 
+  // const  = e => {
+    // setActive(false)
+  // }
+
   return (
     <div
       className={styles.item + activeClass}
-      onBlur={() => setActive(false)}
-      tabIndex={1}
+      // onBlur={blur}
+      tabIndex={-1}
     >
       {link ? (
         <Link className={styles.item__title} to={link}>
@@ -47,7 +51,7 @@ export default function HeaderNavItem({ title, items, link = null }) {
         <ul className={styles.item__ul}>
           {items?.map((item, index) => (
             <li key={index} className={styles.item__li}>
-              <Link to={item?.link}>{t(item?.title)}</Link>
+              <Link onClick={() => setActive(false)} to={item?.link}>{t(item?.title)}</Link>
             </li>
           ))}
         </ul>

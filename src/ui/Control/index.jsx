@@ -3,7 +3,6 @@ import styles from "./style.module.scss";
 import { setClassName } from "../../app/utils/class";
 
 export default function Control({ className, label, error, children }) {
-  const { t } = useTranslation();
   const styleClassName = setClassName(className);
 
   return (
@@ -11,7 +10,7 @@ export default function Control({ className, label, error, children }) {
       {label && <span className={styles.control__title}>{label}</span>}
       {children}
       {error && (
-        <span className={styles.control__error}>{t("form_" + error)}</span>
+        <span className={styles.control__error}>{error}</span>
       )}
     </label>
   );

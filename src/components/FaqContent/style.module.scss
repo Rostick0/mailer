@@ -1,7 +1,7 @@
 .faq_content {
   display: flex;
   flex-direction: column;
-  row-gap: 28px;
+  row-gap: var(--indentation);
 
   &__left {
     width: 100%;
@@ -11,7 +11,7 @@
   &__block {
     display: flex;
     align-items: flex-start;
-    grid-gap: 24px;
+    grid-gap: calc(var(--indentation) - 4px);
   }
 
   &__right {
@@ -20,15 +20,15 @@
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    row-gap: 32px;
+    row-gap: calc(var(--indentation) + 4px);
     flex-grow: 1;
-    padding: 20px 40px;
+    padding: var(--indentation-small) var(--indentation-big);
   }
 
   &__paragraph {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: var(--indentation-small);
   }
 
   @media (max-width: 1024px) {
@@ -43,12 +43,13 @@
 
   @media (max-width: 920px) {
     &__right {
-      row-gap: 24px;
-      padding: 20px 32px;
+      padding: 24px 32px;
     }
+  }
 
-    &__paragraph {
-      row-gap: 12px;
+  @media (max-width: 576px) {
+    &__right {
+      padding: 16px 20px;
     }
   }
 }

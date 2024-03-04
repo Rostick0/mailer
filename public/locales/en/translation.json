@@ -549,5 +549,8 @@
   "formPassword": "Password",
   "formPasswordConfirm": "Retype password",
 
-  "form_required": "Поле обязательно"
+  "form_required": "field is required",
+  "form_minLength": "field must be at least {{min}} characters",
+  "form_email": "field must be a valid email address",
+  "form_confirm": "fields confirmation does not match"
 }

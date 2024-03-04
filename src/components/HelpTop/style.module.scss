@@ -1,8 +1,8 @@
 .help_top {
   display: flex;
   flex-direction: column;
-  row-gap: 28px;
-  margin-bottom: 120px;
+  row-gap: var(--indentation);
+  margin-bottom: calc(var(--indentation-ver-big) * 2);
 
   &__subtitle {
     text-align: center;
@@ -17,7 +17,7 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 24px;
+    grid-gap: calc(var(--indentation-small) + 4px);
   }
 
   &__icon {
@@ -26,5 +26,17 @@
     top: 50%;
     right: 40px;
     transform: translateY(-50%);
+  }
+
+  @media (max-width: 1024px) {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__list {
+      grid-template-columns: 1fr;
+    }
   }
 }

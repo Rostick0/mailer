@@ -3,7 +3,6 @@ import styles from "./style.module.scss";
 import Button from "../../ui/Button";
 import { useTranslation } from "react-i18next";
 import InputForm from "../../Form/InputForm";
-import Input from "../../ui/Input";
 import Checkbox from "../../ui/Checkbox";
 import MyLink from "../../ui/MyLink";
 import { ROUTE_NAMES } from "../../app/router";
@@ -26,22 +25,18 @@ export default function LoginForm() {
       onSubmit={handleSubmit(onSubmit)}
     >
       <div>
-        <div className={styles.login_form__inputs}>
+        <div className={styles.login_form__inputs + " form-inputs"}>
           <InputForm
             className={styles.login_form__input}
-            // register={register}
-            // name="name"
-            // rules={{ required: "true", minLength: 10 }}
-            error={errors.email?.message}
+            error={errors.email?.type}
             rules={{ required: true, minLength: 10 }}
             register={register}
             name="email"
             placeholder={t("formEmail")}
-            // register={register("name", { required: "true", minLength: 10 })}
           />
           <InputForm
             className={styles.login_form__input}
-            error={errors.password?.message}
+            error={errors.password?.type}
             rules={{ required: true, minLength: 10 }}
             register={register}
             name="password"

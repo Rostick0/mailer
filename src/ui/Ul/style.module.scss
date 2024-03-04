@@ -24,4 +24,12 @@
       height: 4px;
     }
   }
+
+  @media (max-width: 576px) {
+    li {
+      &::before {
+        margin: 0 6px;
+      }
+    }
+  }
 }

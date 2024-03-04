@@ -14,14 +14,14 @@ export default function InputForm({
 }) {
   return (
     <Control className={className} label={label} error={error}>
-      <div className={styles.field}>
+      <span className={styles.field}>
         <input
           className={stylesInput.input}
           {...register(name, rules)}
           {...other}
         />
         {icon}
-      </div>
+      </span>
     </Control>
   );
 }

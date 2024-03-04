@@ -28,7 +28,10 @@ export default function CountryProxy({ countries }) {
               countries?.map((item, index) => (
                 <tr key={index}>
                   <td className={styles.country_proxy__td}>
-                    <div className={styles.country_proxy__country}>
+                    <div
+                      className={styles.country_proxy__country}
+                      title={item?.country}
+                    >
                       <img
                         className={styles.country_proxy__country_img}
                         src={item?.image}
@@ -36,11 +39,21 @@ export default function CountryProxy({ countries }) {
                         width={20}
                         height={20}
                       />
-                      <span>{item?.country}</span>
+                      <span className="word-break">{item?.country}</span>
                     </div>
                   </td>
-                  <td className={styles.country_proxy__td}>{item?.session}</td>
-                  <td className={styles.country_proxy__td}>{item?.status}</td>
+                  <td
+                    className={styles.country_proxy__td + " word-break"}
+                    title={item?.session}
+                  >
+                    {item?.session}
+                  </td>
+                  <td
+                    className={styles.country_proxy__td + " word-break"}
+                    title={item?.status}
+                  >
+                    {item?.status}
+                  </td>
                 </tr>
               ))}
           </tbody>
