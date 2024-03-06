@@ -2,7 +2,7 @@
   &__switch {
     display: flex;
     justify-content: center;
-    grid-gap: 24px 72px;
+    grid-gap: 16px 72px;
     margin: var(--indentation) 0;
 
     &_item {
@@ -11,6 +11,7 @@
       display: flex;
       flex-direction: column;
       flex-grow: 1;
+      flex-basis: calc(50% - 72px);
       row-gap: var(--indentation-small);
       text-align: center;
       transition: 0.3s;
@@ -111,6 +112,19 @@
     &__forever {
       flex-direction: column;
       width: fit-content;
+    }
+  }
+
+  @media (max-width: 576px) {
+    &__switch {
+      flex-direction: column;
+
+      &_item {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+      // flex-direction: column;
+      // width: fit-content;
     }
   }
 }
