@@ -30,6 +30,7 @@ export default function PricingChoose() {
               (switchPlan === i ? " " + styles.active : "") +
               " style-block"
             }
+            key={i}
             onClick={() => setSwitchPlan(i)}
           >
             <TitleSmall>{t("pricingChooseSwitchTitle" + (i + 1))}</TitleSmall>
@@ -75,7 +76,7 @@ export default function PricingChoose() {
           </TitleSmall>
           <ul className={styles.pricing_choose__forever_ul}>
             {[1, 2].map((item, i) => (
-              <li className={styles.pricing_choose__forever_li}>
+              <li className={styles.pricing_choose__forever_li} key={i}>
                 <svg
                   width="24"
                   height="25"
@@ -96,7 +97,9 @@ export default function PricingChoose() {
         </div>
         <div className={styles.pricing_choose__forever__right}>
           <div className={styles.pricing_choose__forever_flex}>
-            <span className={styles.pricing_choose__forever_price}>{t("pricingChooseForeverPrice")}</span>
+            <span className={styles.pricing_choose__forever_price}>
+              {t("pricingChooseForeverPrice")}
+            </span>
             <P>{t("Forever")}</P>
           </div>
           <MyLink to={ROUTE_NAMES.confirm}>

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./style.module.scss";
 import { useTranslation } from "react-i18next";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 export default function HeaderNavItem({ title, items, link = null }) {
   const { t } = useTranslation();
@@ -10,14 +10,29 @@ export default function HeaderNavItem({ title, items, link = null }) {
   const activeClass = useMemo(() => (active ? " " + styles.item_active : ""));
 
   // const  = e => {
-    // setActive(false)
+  // setActive(false)
   // }
+
+  const Nav = useRef(null);
+
+  useEffect(() => {
+    const handleClick = (event) => {
+      if (Nav.current && !Nav.current.contains(event.target)) {
+        setActive(false);
+      }
+    };
+
+    document.addEventListener("click", handleClick, true);
+
+    return () => {
+      document.removeEventListener("click", handleClick, true);
+    };
+  }, [Nav]);
 
   return (
     <div
       className={styles.item + activeClass}
-      // onBlur={blur}
-      tabIndex={-1}
+      ref={Nav}
     >
       {link ? (
         <Link className={styles.item__title} to={link}>
@@ -51,7 +66,9 @@ export default function HeaderNavItem({ title, items, link = null }) {
         <ul className={styles.item__ul}>
           {items?.map((item, index) => (
             <li key={index} className={styles.item__li}>
-              <Link onClick={() => setActive(false)} to={item?.link}>{t(item?.title)}</Link>
+              <Link onClick={() => setActive(false)} to={item?.link}>
+                {t(item?.title)}
+              </Link>
             </li>
           ))}
         </ul>
