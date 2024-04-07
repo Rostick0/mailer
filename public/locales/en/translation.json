@@ -543,6 +543,8 @@
   "serversTableIp": "IP",
   "serversTableStatus": "Status",
 
+  "technicalWorkTitle": "Technical work is underway",
+
   "formFirstName": "First name",
   "formLastName": "Last name",
   "formEmail": "Email",
