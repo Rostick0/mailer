@@ -1,6 +1,7 @@
 import React from "react";
 import { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
+import LoadingContent from "../components/LoadingContent";
 
 const Confirm = lazy(() => import("../pages/Confirm"));
 const Contact = lazy(() => import("../pages/Contact"));
@@ -34,7 +35,7 @@ export const ROUTE_NAMES = {
 
 const AppRouter = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<LoadingContent />}>
       <Routes>
         <Route path={ROUTE_NAMES.confirm} element={<Confirm />}></Route>
         <Route path={ROUTE_NAMES.contact} element={<Contact />}></Route>
