@@ -27,11 +27,26 @@
       display: flex;
       align-items: flex-start;
       grid-gap: 24px 48px;
-      flex-wrap: wrap;
     }
   }
 
   &__fields {
     flex-grow: 1;
+  }
+
+  @media (max-width: 1330px) {
+    &__form {
+      &_content {
+        column-gap: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 1120px) {
+    &__form {
+      &_content {
+        flex-wrap: wrap;
+      }
+    }
   }
 }

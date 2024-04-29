@@ -11,6 +11,7 @@ const Home = lazy(() => import("../pages/Home"));
 const IMAP = lazy(() => import("../pages/IMAP"));
 const Login = lazy(() => import("../pages/Login"));
 const Mailing = lazy(() => import("../pages/Mailing"));
+const Page404 = lazy(() => import("../pages/Page404"));
 const Pricing = lazy(() => import("../pages/Pricing"));
 const Proxy = lazy(() => import("../pages/Proxy"));
 const Register = lazy(() => import("../pages/Register"));
@@ -53,6 +54,7 @@ const AppRouter = () => {
           path={ROUTE_NAMES.technicalWork}
           element={<TechnicalWork />}
         ></Route>
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </Suspense>
   );
